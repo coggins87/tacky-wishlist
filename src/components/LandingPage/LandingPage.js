@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import postOffice from "../../assets/SantasHiddenVil_PostOffice.gif";
+import bells from '../../assets/Live_Action_Fezz_-_15_-_Carol_of_the_Bells.mp3'
 import { Controller, Scene } from "react-scrollmagic";
 
 export default class LandingPage extends React.Component {
@@ -19,6 +20,7 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <div className="landing">
+        <audio autoPlay loop src={bells}></audio>
         <h1 id="landing-header">
           {" "}
           <img src="https://www.fg-a.com/christmas/3-animated-present.gif" />
