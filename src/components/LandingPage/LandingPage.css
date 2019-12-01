@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap");
+
+.landing {
+  background-image: url("../../assets/snowflake-background-3832972_1920.jpg");
+  background-repeat: repeat;
+  font-family: "Berkshire Swash", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#landing-header {
+  background-color: red;
+  color: white;
+  padding: 10px
+}
+#second-header {
+  background-color: green;
+  color: white
+}
+#post-office {
+max-width: 500px;
+margin: 0 auto;
+padding: 10px
+}
+
+.naughty-nice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#naughty {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: red;
+  width:100%;
+  height: 500px;
+}
+
+#nice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: green;
+  width: 100%;
+  height: 500px;
+}
