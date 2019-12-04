@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+.containerWishList {
+    text-align: center;
+    height: 720px;
+    width: 500px;
+    margin: 20px auto 20px auto;
+    padding: 20px 20px 20px 20px;
+    background-image: url('https://lh3.googleusercontent.com/4tFJfc34GUZe5GNpMlru7hZzrf7hPkBJbHos3ol-tnbPa9cWq7_JTjqIpFdENLhlt8ryULrhSjDwytT-e7NN34DxTCzId62SNPZYz31PMHe2LPyYuIdxsALZouAC9CbvxxuJlb8310PgGUGNb3JyNDNqEjEH-TKQ0H6J35h2efFiaEA-RnzLeTu6xf-cqtIaKTk4Mt6TQcJP_jpR7BtpThMEhB7CUIv8OqALeiIEZnBI_8i8vippMg9PvbYFCauU5_S0Av8y3VQM5ZE2QVIXFYPdRgYDU_j2tPYCiQ20-diEKD5KWhcz-84GoRkDpry6mPJJUw9UiAprzPb82wuIOkZCGsr1p7wS7xAWSb91ntFgsenWKIeGeWUq5KrBzvlSaf8vaTZng-Mga-lERn9GCVutVeyfmIeFOvYCctpIJ22sXYg9z9aQ9UL-zAvdUMh5R5f4sUtI92H9VaOlvRthK8_j0wAcunKJLB7BjWVVZpX8ENhFJfPgtwqlNl8isVBr7jiJnsVBeTeF8YIdobA49-fuhAsp46fseLj1UUEQYoVxrdO2oJX4FD1d3M6leIXMyMMa2A6D2qPkjGnoeLbaiBHEQD9IfVIcQD5IFFSIwCpJB9ose0yDd_69TR2hhKbyJkDqCUdSGqsjnFEdEhCQ6p6b5j5GopG6yBMui_AlRi8as_j35KvMrGK5_kMzUMuckAsQSyQ3rOb3rafMuQgJg6UF0oPvTGZsRAC1qLG671fqRwy1=w694-h978-no');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.containerEnv {
+    text-align: center;
+    height: 650px;
+    width: 700px;
+    margin: 0px auto 0px auto;
+    background-image: url('https://lh3.googleusercontent.com/lkc2N3qcQpTeGyUvIiqF56NbYdbkeEXS78hfMW-qPfGehqeJkn-a5-rxrF4dktH9Tl4VqzAoo7rBcqo1EzK6MHjlUdbpe5HQ3ysnAqgQx5-xXbZp5EYSuqE3vGBCf5QoTZuEK66BJxOxnmwpxyVb_pQ742v3nJ2rNuZYk9-4V1S5sOOjewFaNFumYXblB4i9GJb_hP3ZJ1ephdcvJie4WJJEygwiCnNGpB0yFLNkvRRuJp3_fgJc0v15aK1kRqskjLz4JR_SGhLQJrcjt9QFyUl_2jbmpmyrjxqTWvVj18anqcfCUL_MYzvWnW4Az-xgE8ww3OU2plr6f_5RvYRJfc8gsYIq9ErJHtsel6bJ8he9ZZYa6HC5y5bpmq9aRPpWAtU0aneXSdzBqFlPbBp04t-OjMxmYZbYDhPuzHGBHa7MM3XrhnatyhfjNaxnJyOcMks9VMD31b6J9qNO8fg12LHm3vH2h6zAir5NQQ53fpE7wAo84TtIDzD5HP83_GPzVlI_u5NqBE4_AvPFQpGI8zXQpikKoPt80ZVevIBRr72jfa_ww-010g3arTxyREQJ0NAioP1zc-LL7r6hW2c3ev-_3c4a5y2aoO62X-DqrMdukyDh7ME3v38Xxy-bR3IDfXoB455OnKBQKVj7EKnojvzWt9fPIKavbduq_SvpRLnkiYdYQ13v4g0=w992-h978-no');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.wishList {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 350px;
+    margin: 230px auto 0px auto;
+    font-size: 70px;
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    line-height: 40px;
+    outline: none;
+}
+
+.Santa {
+    padding: 305px 0px 0px 0px !important;
+}
+
+.nameText {
+    color: rgb(112, 3, 3);
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.signInput {
+    background: none;
+    border: none;
+    padding: 0px 20px 20px 20px;
+    outline: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
