@@ -3,7 +3,7 @@ import "./LandingPage.css";
 import postOffice from "../../assets/SantasHiddenVil_PostOffice.gif";
 import bells from '../../assets/Live_Action_Fezz_-_15_-_Carol_of_the_Bells.mp3'
 import { Controller, Scene } from "react-scrollmagic";
-
+import naughty from '../../assets/naughty-children-never-get-any-presents.mp3'
 export default class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +13,8 @@ export default class LandingPage extends React.Component {
   }
 
   toPath = event => {
+    let audio = new Audio(naughty)
+    audio.play()
     this.setState({
       choice: event.id
     });
