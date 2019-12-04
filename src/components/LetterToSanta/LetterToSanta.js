@@ -85,7 +85,7 @@ export default class LetterToSanta extends React.Component {
                                 paused
                             >
                                 <div className='containerEnv'>
-                                    <p className='nameTextSanta'>To: Santa</p>
+                                    <p className='nameText Santa'>To: Santa</p>
                                     {this.state.name === '' ? <p className='nameText'>From: Your Name Here</p> : <p className='nameText'>From: {this.state.name}</p>}
                                 </div>
                             </Tween>
