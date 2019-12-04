@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap");
+
+.landing {
+  background-image: url("../../assets/snowflake-background-3832972_1920.jpg");
+  background-repeat: repeat;
+  font-family: "Berkshire Swash", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#landing-header {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  height: 150px;
+  font-size: 50px
+}
+#second-header {
+  background-color: green;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  height: 200px;
+  font-size: 52px;
+}
+#post-office {
+max-width: 500px;
+margin: 0 auto;
+padding: 10px
+}
+
+.naughty-nice {
+  color: white;
+  font-size: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#naughty {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: red;
+  width:100%;
+  height: 500px;
+}
+
+#nice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: green;
+  width: 100%;
+  height: 500px;
+}
+p {
+  margin: 0 auto
+}
+#choice-question {
+  background-color: blue;
+  color: white;
+  height: 200px;
+  font-size: 78px;
+}
