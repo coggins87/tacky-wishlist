@@ -17,7 +17,7 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <div className="landing">
-        <audio autoPlay loop src={bells} id="player" preload="auto" ></audio>
+        <audio autoPlay loop src={bells} id="player" preload="auto" controls></audio>
       
         <h1 id="landing-header">
           {" "}
