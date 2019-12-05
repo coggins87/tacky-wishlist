@@ -5,20 +5,16 @@ import bells from "../../assets/Live_Action_Fezz_-_15_-_Carol_of_the_Bells.mp3";
 import { Controller, Scene } from "react-scrollmagic";
 import { Link } from "react-router-dom";
 import naughty from "../../assets/naughty-children-never-get-any-presents.mp3";
+
+
 export default class LandingPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      choice: null
-    };
-  }
 
   toPath = event => {
+    if(event.id ==='naughty'){
     let audio = new Audio(naughty);
     audio.play();
-    this.setState({
-      choice: event.id
-    });
+    }
+   
   };
   render() {
     return (
@@ -26,12 +22,11 @@ export default class LandingPage extends React.Component {
         <audio autoPlay loop src={bells}></audio>
         <h1 id="landing-header">
           {" "}
-          <img src="https://www.fg-a.com/christmas/3-animated-present.gif" />
+          <img src="https://www.fg-a.com/christmas/3-animated-present.gif" alt='dancing present'/>
           Welcome To Santa's Post Office!{" "}
-          <img src="https://www.fg-a.com/christmas/3-animated-present.gif" />
+          <img src="https://www.fg-a.com/christmas/3-animated-present.gif" alt='dancing present' />
         </h1>
-        {/*   <img src={postOffice} alt="Santa's post office"/>
-         */}{" "}
+      {" "}
         <img
           id="post-office"
           src={postOffice}
@@ -70,11 +65,11 @@ export default class LandingPage extends React.Component {
         <div>
           <h3 id="choice-question">Were You Naughty or Nice This Year? </h3>
           <div className="naughty-nice">
-            <div role="link" id="naughty" onHover={e => this.toPath(e.target)}>
-              <Link to="/naughty">Naughty >:)</Link>
+            <div role="link" id="naughty" onClick={e => this.toPath(e.target)}>
+              <Link id="naughty" to="/naughty">Naughty >:)</Link>
             </div>
             <div role="link" id="nice" onClick={e => this.toPath(e.target)}>
-              <Link to="/nice">Nice O:)</Link>
+              <Link id="nice" to="/nice">Nice O:)</Link>
             </div>
           </div>
         </div>
