@@ -40,6 +40,7 @@ export default class LetterToSanta extends React.Component {
                                           
                                         >
                                         <textarea
+                                        autoFocus
                                             className='wishItem'
                                             rows='20'
                                             cols='20'
