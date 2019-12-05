@@ -61,10 +61,10 @@ export default class LandingPage extends React.Component {
         <div>
           <h3 id="choice-question">Were You Naughty or Nice This Year? </h3>
           <div className="naughty-nice">
-            <div id="naughty" onClick={e => this.toPath(e.target)}>
+            <div role="link" id="naughty" onClick={e => this.toPath(e.target)}>
               <p>Naughty >:)</p>
             </div>
-            <div id="nice" onClick={e => this.toPath(e.target)}>
+            <div role="link" id="nice" onClick={e => this.toPath(e.target)}>
               <p>Nice O:)</p>
             </div>
           </div>
