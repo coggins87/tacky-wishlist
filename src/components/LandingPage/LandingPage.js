@@ -1,9 +1,10 @@
 import React from "react";
 import "./LandingPage.css";
 import postOffice from "../../assets/SantasHiddenVil_PostOffice.gif";
-import bells from '../../assets/Live_Action_Fezz_-_15_-_Carol_of_the_Bells.mp3'
+import bells from "../../assets/Live_Action_Fezz_-_15_-_Carol_of_the_Bells.mp3";
 import { Controller, Scene } from "react-scrollmagic";
-import naughty from '../../assets/naughty-children-never-get-any-presents.mp3'
+import { Link } from "react-router-dom";
+import naughty from "../../assets/naughty-children-never-get-any-presents.mp3";
 export default class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -13,8 +14,8 @@ export default class LandingPage extends React.Component {
   }
 
   toPath = event => {
-    let audio = new Audio(naughty)
-    audio.play()
+    let audio = new Audio(naughty);
+    audio.play();
     this.setState({
       choice: event.id
     });
@@ -50,6 +51,14 @@ export default class LandingPage extends React.Component {
                 src="https://www.fg-a.com/christmas/christmas-bells-ringing.gif"
                 alt="ringing bells"
               />
+              <img
+                src="https://www.fg-a.com/christmas/christmas-bells-ringing.gif"
+                alt="ringing bells"
+              />
+              <img
+                src="https://www.fg-a.com/christmas/christmas-bells-ringing.gif"
+                alt="ringing bells"
+              />
 
               <img
                 src="https://www.fg-a.com/christmas/christmas-bells-ringing.gif"
@@ -61,11 +70,11 @@ export default class LandingPage extends React.Component {
         <div>
           <h3 id="choice-question">Were You Naughty or Nice This Year? </h3>
           <div className="naughty-nice">
-            <div role="link" id="naughty" onClick={e => this.toPath(e.target)}>
-              <p>Naughty >:)</p>
+            <div role="link" id="naughty" onHover={e => this.toPath(e.target)}>
+              <Link to="/naughty">Naughty >:)</Link>
             </div>
             <div role="link" id="nice" onClick={e => this.toPath(e.target)}>
-              <p>Nice O:)</p>
+              <Link to="/nice">Nice O:)</Link>
             </div>
           </div>
         </div>
