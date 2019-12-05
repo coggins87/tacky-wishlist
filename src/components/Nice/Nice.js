@@ -22,7 +22,6 @@ export default class Nice extends React.Component {
                 width="480"
                 height="352"
                 frameBorder="0"
-                class="giphy-embed"
                 allowFullScreen
               ></iframe>
            

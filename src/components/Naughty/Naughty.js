@@ -17,7 +17,7 @@ return name
       <div className="naughty">
         <audio autoPlay loop src={nuttin}></audio>
 
-        <LetterToSanta setName={this.setName}/>
+        <LetterToSanta/>
         <Controller>
           <Scene duration={600} pin>
             <div id="scroll-effect">
