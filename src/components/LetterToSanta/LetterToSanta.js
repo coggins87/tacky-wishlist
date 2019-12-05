@@ -11,10 +11,6 @@ export default class LetterToSanta extends React.Component {
         }
     }
 
-    sendLetter(e) {
-        e.preventDefault();
-        console.log('Hohoho');
-    }
 
     render() {
         return (
@@ -41,7 +37,8 @@ export default class LetterToSanta extends React.Component {
                                 <div className='containerWishList'>
                                     <form 
                                         className='wishList'
-                                        onSubmit={(e) => this.sendLetter(e)}>
+                                          
+                                        >
                                         <textarea
                                             className='wishItem'
                                             rows='20'
@@ -55,13 +52,17 @@ export default class LetterToSanta extends React.Component {
                                             placeholder='signed'
                                             onChange={(e) => this.setState({name: e.target.value.trim()})}
                                         />
-                                        {/* <button>send to santa</button> */}
                                     </form>
+                                </div>
+                                <div>
                                 </div>
                             </Tween>
                         )}
                     </Scene>
+                    <img src="https://myrealdomain.com/images/blinking-arrow-gif-5.gif" alt='arrow telling you to scroll down'/>
+
                 </Controller>
+                <div id="envscene">
                 <Controller>
                     <Scene duration={500} triggerElement='.containerWishList' offset={500}>
                         {(progress) => (
@@ -92,6 +93,7 @@ export default class LetterToSanta extends React.Component {
                         )}
                     </Scene>
                 </Controller>
+                </div>
             </div>
         )
     }
